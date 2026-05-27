@@ -1,0 +1,15 @@
+import time
+question="which is the national bird of india?"
+correct_answer="peacock"
+print(question)
+start_time=time.time()
+answer=input("your answer")
+end_time=time.time()
+time_taken=end_time-start_time 
+print(time_taken )
+if time_taken>10:
+    print("time up")
+elif answer.lower()== correct_answer:
+    print("correct")
+else:
+    print("wrong")
